@@ -31,8 +31,8 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           # 指定上下文目录为 Sora2，因为代码和 Dockerfile 都在那里
-          context: ./Sora2
-          file: ./Sora2/Dockerfile
+          context: ./
+          file: ./Dockerfile
           push: true
           # 镜像标签：用户名/仓库名:latest
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/sora2:latest
